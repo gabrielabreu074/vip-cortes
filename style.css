@@ -1,0 +1,382 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{background-color: black;
+    height: 80px;
+    width: 100%;
+display: flex;
+justify-content: space-between;
+font-size: 35px;
+gap: 28px;
+text-decoration: none;
+font-family: "Big Shoulders", sans-serif;
+align-items: center;
+min-width: 320px;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 999;
+}
+ 
+.item, .entrar{color: white;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+}
+ 
+.entrar2{color: #f0b65f;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+}
+ 
+.logo{height: 90px;
+    width: 150px;
+align-items: center;
+}
+ 
+.container_left{display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    gap: 28px;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    align-items: center;
+    padding: 0px 1%;}
+ 
+.container_right{display: flex;
+        justify-content: space-between;
+        font-size: 35px;
+        gap: 28px;
+        text-decoration: none;
+        font-family: "Big Shoulders", sans-serif;
+        align-items: center;
+        padding: 0px 2%;}
+ 
+        .item:hover,.entrar:hover,.entrar2:hover{transform: scale(1.2);}
+       
+        .menu-icon {background-color: rgba(0, 0, 0, 0);
+            border: none;
+            display: none;
+            cursor: pointer;
+        padding: 0px 2%;}
+ 
+            .menu-icon img{height: 50px;
+                width: 50px;}
+ 
+                @media (max-width: 1079px) {
+                    .item,.entrar,.entrar2 {
+                        display: none;}
+                .menu-icon {justify-content: center;
+                    align-items: center;
+                        display: flex;}
+                }
+.body-ava{
+    overflow: hidden;
+background-color: black;}
+    .barber_background-ava {justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background: url("assets/fundo avaliações.png") no-repeat center/cover;
+    }
+    
+    .barber_background-ava::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(0,0,0,0.8)30%, transparent);
+        pointer-events: none;
+        z-index: 1;
+    }
+    
+    .avalic {
+        justify-content: center;
+        display:flex ;
+        font-weight: 1000;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-top: 80px;  
+        background-color: black;
+        height: 90px;
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 70px;
+        border: 5px white;
+    }
+    .avalienos{
+        font-family: "Big Shoulders", sans-serif;
+        font-size: 70px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: flex;
+        width: 6%;
+        margin-left: 91%;
+    }
+    .avalienos:hover{
+        color: #f0b65f;
+    }
+    .fotoava{
+padding-top: 100px;
+padding-left: 30%;
+width: 100%;        
+    }
+    .coluns{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 50px;
+    }
+    .pefilava{
+        width: 100px;
+        height: auto;
+        margin-left: -40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .pefilava-foto{
+        width: 100px;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+
+
+    }
+    .nome{color: white;
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: column;
+        width: 300px;
+
+    }
+    .avali{
+        color: white;
+        background-color: #f0b65f;
+        width: 270px;
+        height: 150px;
+        border-radius: 30px;
+        padding-left: 15px;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .containerava {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.coluns {
+    flex: 1 1 40%; 
+    max-width: 300px;
+}
+.coluns2{
+    display: none;
+}
+.coluns3{
+    display: none;
+}
+.title{
+    justify-content: center;
+    display:flex ;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 80px;  
+    background-color: black;
+    height: 50px;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 50px;
+    border: 5px white;
+}
+@media ( max-width: 500px){
+    .body-ava{
+        overflow: visible;
+    }
+    .barber_background-ava{
+        display:none;
+    }
+    .avalienos{
+        margin-left: 33%;
+    }
+    .coluns2{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25%;
+    }
+    .coluns3{
+        display: none;
+    }
+    
+}
+@media  (min-width:501px) and (max-width: 800px){
+    .barber_background-ava{display:none;
+    }
+    .body-ava{
+        overflow: visible;
+    }
+    .avalienos{
+        margin-left: 40%;
+    }
+    .coluns2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 35%;
+        width: 270px;
+        
+        
+    }
+    .coluns3{
+        display: flex;
+        flex-direction: column;
+        margin-left: 35%;
+        
+        width: 270px;
+        
+    }
+    
+}
+
+.body-ava2{
+    background-color: black;
+}
+.textavaliar{
+    justify-content: center;
+    display:flex ;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 70px;  
+    background-color: black;
+    height: 90px;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 50px;
+    border: 5px white;
+}
+.avaliartext{
+    color: #f0b65f;
+
+}
+.star{justify-content: center;
+    display:flex ;
+    font-weight: 1000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 0px;  
+    background-color: black;
+    height: 30px;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 50px;
+    border: 5px white;}
+.digiteaqui{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    font-family: "Big Shoulders", sans-serif;
+    border: 2px solid white;
+    resize: none;
+    font-size: 25px;
+    margin-left: 39%;
+    margin-top: 5%;
+    border-radius: 20px;
+    color: white;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    margin-top: 150px;
+}
+.enviar{
+    color: white;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 30px;
+    background-color: #f0b65f;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.enviar:hover{
+    background-color: #b98c49;
+}
+.cancelar{
+    color: white;
+    text-decoration: none;
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 30px;
+    background-color: #f0b65f;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+.cancelar:hover{
+    background-color: #b98c49;
+}
+@media ( max-width:768px) and (min-width:501px) {
+    .body-ava{
+        overflow: visible;
+    }
+    .digiteaqui{
+        margin-left: 24%;
+        height: 300px;
+        padding-left: 10px;
+    }
+    .button{
+        margin-top: 100px;
+        
+    }
+    .enviar{
+        width: 200px;
+        height: 80px;
+        font-size: 60px;
+        padding-top: 5px;
+        border-radius: 30px;
+        justify-content: center;
+    }
+    .cancelar{
+        width: 200px;
+        height: 80px;
+        font-size: 60px;
+        padding-top: 5px;
+        border-radius: 30px;
+        justify-content: center;
+    }
+}
+@media ( max-width: 500px){
+    .body-ava{
+        overflow: visible;
+    }
+
+    .textavaliar{
+        font-size: 35px;
+        height: 50px;
+
+    }
+    .star{
+        font-size:30px;
+    }
+    .digiteaqui{
+        margin-left: 10%;
+        width: 350px;
+    }
+    .button{
+        gap: 50px;
+        margin-top: 40px;
+    }
+}
